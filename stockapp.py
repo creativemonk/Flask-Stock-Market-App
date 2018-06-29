@@ -30,8 +30,8 @@ def graph():
         app.vars['enddate'] = request.form['enddate']
         print(app.vars['startdate'], app.vars['enddate'])
 
-        #api_url = 'https://www.quandl.com/api/v3/datasets/NSE/%s.json?api_key=1NkrjrpFERameF9p_kpg' % app.vars['ticker']
-        api_url = 'https://www.quandl.com/api/v3/datasets/NSE/%s.json?column_index=5&api_key=1NkrjrpFERameF9p_kpg&start_date=%s&end_date=%s' % (app.vars['ticker'], app.vars['startdate'], app.vars['enddate']) 
+        #api_url = 'https://www.quandl.com/api/v3/datasets/NSE/%s.json?api_key=ENTER API KEY' % app.vars['ticker']
+        api_url = 'https://www.quandl.com/api/v3/datasets/NSE/%s.json?column_index=5&api_key=ENTER API KEY&start_date=%s&end_date=%s' % (app.vars['ticker'], app.vars['startdate'], app.vars['enddate']) 
         #api_url = 'https://www.quandl.com/api/v3/datasets/NSE/%s.json?api_key=ENTER API KEY&start_date=%s&end_date=%s' % (app.vars['ticker'], app.vars['startdate'], app.vars['enddate']) 
         session = requests.Session()
         session.mount('http://', requests.adapters.HTTPAdapter(max_retries=3))
