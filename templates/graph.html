@@ -1,0 +1,30 @@
+<html>
+  <head>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <link
+      href="https://cdn.pydata.org/bokeh/release/bokeh-0.11.1.min.css"
+      rel="stylesheet" type="text/css">
+    <script src="https://cdn.pydata.org/bokeh/release/bokeh-0.11.1.min.js"></script>
+    {{ resources|indent(4)|safe }}
+
+    {{ script|indent(4)|safe }}
+    {{ script | safe }}
+  </head>
+  <body>
+    <div class=page>
+     <p> {{ div|indent(4)|safe }}</p>
+      
+    </div>
+    <button onclick="goBack()">Go Back</button>
+
+<script>
+function goBack() {
+    window.history.back();
+}
+</script>
+<input type="button" value="HDFC SEC"
+onclick="window.open('https://ntrade.hdfcsec.com/')">
+<input type="button" value="ICICI SEC"
+onclick="window.open('https://secure.icicidirect.com/IDirectTrading/Customer/Login.aspx')">
+  </body>
+</html>
